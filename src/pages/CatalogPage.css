@@ -1,0 +1,83 @@
+.catalog-page-container {
+  background-color: #f7f7f7;
+  padding: 20px;
+}
+
+.catalog-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.catalog-title {
+  font-size: 3rem;
+  color: #333333;
+  margin: 0;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.catalog-title:hover {
+  transform: scale(1.05);
+}
+
+.settings-link {
+  font-size: 1.5rem;
+  color: #007bff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.settings-link:hover {
+  transform: translateY(-2px);
+}
+
+.settings-icon {
+  font-size: 2.5rem;
+  margin-right: 5px;
+}
+
+.catalog-page {
+  display: flex;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.display-row {
+  display: flex;
+  flex-direction: column;
+}
+
+.display-column {
+  display: flex;
+  flex-direction: row;
+}
+
+.navbar {
+  flex: 0 0 auto;
+  margin-bottom: 20px;
+}
+
+.product-list {
+  flex: 1;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 767px) {
+  .catalog-title {
+    font-size: 2.5rem;
+  }
+
+  .settings-link {
+    font-size: 1.2rem;
+  }
+
+  .settings-icon {
+    font-size: 2rem;
+  }
+}

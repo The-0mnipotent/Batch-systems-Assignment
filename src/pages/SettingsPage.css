@@ -1,0 +1,115 @@
+.settings-page-container {
+  background-color: #f7f7f7;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.settings-form {
+  max-width: 700px;
+  width: 100%;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.settings-title {
+  font-size: 3.5rem;
+  color: #333333;
+  margin-bottom: 40px;
+  text-align: center;
+  margin-top: 40px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.settings-label {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #333333;
+  margin-bottom: 10px;
+  display: inline-block;
+  width: 300px;
+}
+
+.settings-select {
+  width: calc(100% - 220px);
+  padding: 12px;
+  font-size: 1rem;
+  color: #333333;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  background-color: #ffffff;
+  transition: border-color 0.3s ease;
+  height: 48px;
+}
+
+.settings-input-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.settings-select:focus {
+  border-color: #007bff;
+}
+
+.settings-submit {
+  padding: 15px 25px;
+  font-size: 1.2rem;
+  color: #ffffff;
+  background-color: #4caf50;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: block;
+  margin: 0 auto;
+}
+
+.settings-submit:hover {
+  background-color: #3b6c04;
+  transform: translateY(-8px);
+}
+
+@media (max-width: 767px) {
+  .settings-page-container {
+    padding: 10px;
+  }
+
+  .settings-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+
+  .settings-label {
+    font-size: 1.2rem;
+  }
+
+  .settings-select {
+    font-size: 0.9rem;
+    width: 100%;
+  }
+
+  .settings-input-container {
+    flex-direction: column;
+    margin-bottom: 15px;
+  }
+
+  .settings-submit {
+    padding: 12px 20px;
+    font-size: 1rem;
+  }
+
+  .settings-submit {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
